@@ -1,9 +1,9 @@
 <script>
 export let element = "";
-export let color = "";
+export let category = "";
 </script>
 
-<main style="--color: {color}">
+<main class="{category}">
     <span id="element">{ element }</span>
 </main>
 
@@ -16,7 +16,30 @@ export let color = "";
         display: inline-block;
         width: 4rem;
         height: 4rem;
-        background-color: var(--color);
         margin: 5pt;
     }
+
+    .noble-gas {
+        background-color: violet;
+    }
+
+    .alkali-metal {
+        background-color: brown;
+    }
+    .alkaline-earth-metal {
+        background-color: darkred;
+    }
+
+    .actinide {
+        background-color: darkblue;
+    }
+
+    .lanthanide {
+        background-color: darkgreen;
+    }
+
+    .diatomic-nonmetal {
+        background-color: gray;
+    }
+
 </style>
