@@ -1,6 +1,7 @@
 <script>
     import ElementTile from "./ElementTile.svelte"
     import { elements } from "./PeriodicTable.json"
+    import data from "./schwurbel.json"
 
     let grid = {};
     elements.forEach((element) => {
@@ -21,7 +22,7 @@
         <ElementTile />
         {:else}
         {@const element = grid[ypos][xpos]}
-        <ElementTile element="{element.symbol}" category="{element.category.replace(/ /g, '-')}" />
+        <ElementTile element={element} items={data[element.symbol] !== undefined ? data[element.symbol] : []}  />
         {/if}
         {/each}
     </div>
@@ -29,9 +30,6 @@
 </main>
 
 <style>
-    main {
-        width: 100rem;
-    }
     .row {
         display: flex;
         flex-wrap: nowrap;

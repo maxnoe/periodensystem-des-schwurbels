@@ -1,22 +1,55 @@
 <script>
-export let element = "";
-export let category = "";
+export let element = undefined;
+export let disabled = true;
+export let items = [];
+
+let category = "empty";
+if (element !== undefined) {
+    category = element.category.replace(/[, ]/g, '-');
+}
 </script>
 
-<main class="{category}">
-    <span id="element">{ element }</span>
+<main>
+    {#if element !== undefined }
+    <a href="/element.html?element={element.symbol}">
+        <div class="tile {category}">
+            <span id="symbol"><sup id="number">{element.number}</sup>{element.symbol}</span>
+            <span id="counter">{items.length} Schwurbel</span>
+        </div>
+    </a>
+    {:else}
+        <div id="tile" class="tile empty"></div>
+    {/if}
 </main>
 
 <style>
-    #element {
-        font-size: 2rem;
+    a {
+        color: white;
+    }
+    a:hover {
+        color: darkblue;
     }
 
     main {
-        display: inline-block;
-        width: 4rem;
-        height: 4rem;
-        margin: 5pt;
+        font-size: 16pt;
+    }
+
+    #counter {
+        font-size: 8pt;
+    }
+
+    .tile {
+        display: flex;
+        width: 48pt;
+        height: 48pt;
+        margin: 2pt;
+        justify-content: center;
+        align-items: center;
+        background-color: gray;
+        flex-direction: column;
+    }
+    .tile:hover {
+        background-color: white;
     }
 
     .noble-gas {
@@ -26,6 +59,7 @@ export let category = "";
     .alkali-metal {
         background-color: brown;
     }
+
     .alkaline-earth-metal {
         background-color: darkred;
     }
@@ -39,7 +73,32 @@ export let category = "";
     }
 
     .diatomic-nonmetal {
-        background-color: gray;
+        background-color: orange;
     }
+
+    .polyatomic-nonmetal {
+        background-color: darkorange;
+    }
+
+    .metalloid {
+        background-color: deeppink;
+    }
+
+    .transition-metal {
+        background-color: teal;
+    }
+
+    .post-transition-metal {
+        background-color: darkviolet;
+    }
+
+    .empty {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .empty:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    
 
 </style>
