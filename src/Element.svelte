@@ -11,7 +11,7 @@ const element_data = elements.find((e) => e.symbol == element);
 </script>
 
 <main>
-    <h1><a href="/">Das Periodensytem des Schwurbels</a></h1>
+    <h1><a href="/periodensystem-des-schwurbels/">Das Periodensytem des Schwurbels</a></h1>
     <h2>
         <ElementTile element={element_data} items={items}  />
     </h2>

@@ -10,7 +10,7 @@ if (element !== undefined) {
 
 <main>
     {#if element !== undefined }
-    <a href="/element.html?element={element.symbol}">
+    <a href="/periodensystem-des-schwurbels/element.html?element={element.symbol}">
         <div class="tile {category} { items.length == 0 ? 'empty' : 'has-content' }">
             <span id="symbol"><sup id="number">{element.number}</sup>{element.symbol}</span>
         </div>
