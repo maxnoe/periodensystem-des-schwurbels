@@ -3,7 +3,7 @@ export let element = undefined;
 export let disabled = true;
 export let items = [];
 
-let category = "empty";
+let category = "empty-tile";
 if (element !== undefined) {
     category = element.category.replace(/[, ]/g, '-');
 }
@@ -12,13 +12,12 @@ if (element !== undefined) {
 <main>
     {#if element !== undefined }
     <a href="/element.html?element={element.symbol}">
-        <div class="tile {category}">
+        <div class="tile {category} { items.length == 0 ? 'empty' : 'has-content' }">
             <span id="symbol"><sup id="number">{element.number}</sup>{element.symbol}</span>
-            <span id="counter">{items.length} Schwurbel</span>
         </div>
     </a>
     {:else}
-        <div id="tile" class="tile empty"></div>
+        <div id="tile" class="tile empty-tile"></div>
     {/if}
 </main>
 
@@ -34,6 +33,10 @@ if (element !== undefined) {
         font-size: 16pt;
     }
 
+    a.empty {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
     #counter {
         font-size: 8pt;
     }
@@ -47,6 +50,9 @@ if (element !== undefined) {
         align-items: center;
         background-color: gray;
         flex-direction: column;
+    }
+    .empty {
+        opacity: 0.3;
     }
     .tile:hover {
         background-color: white;
@@ -92,10 +98,10 @@ if (element !== undefined) {
         background-color: darkviolet;
     }
 
-    .empty {
+    .empty-tile {
         background-color: rgba(0, 0, 0, 0);
     }
-    .empty:hover {
+    .empty-tile:hover {
         background-color: rgba(0, 0, 0, 0);
     }
 
