@@ -2,28 +2,46 @@
   "H": [
     {
       "title": "Wasserstoffwasser",
-      "url": "",
+      "url": "https://osmodirect.de/blogs/news/was-ist-wasserstoff-wasser",
       "schwurbel_der_woche": "Mi269 - „Salzlimo“",
-      "minkorrekt_url": "",
-      "abstract": "CO2 im Wasser? Langweilig. H2? Cool."
+      "minkorrekt_url": "https://minkorrekt.de/mi269-salzlimo/",
+      "abstract": "Ja ihr habt richtig gelesen! Ihr braucht alle mehr Wasserstoff in eurem Wasser und wenn das nicht reicht könnt ihr das Zeug auch direkt wegatmen. Prost!"
     }
   ],
   "He": [
     {
       "title": "Helium-Globuli",
-      "url": "",
+      "url": "https://www.homsym.de/sherr-jeremy/helium.-erfahrungen-mit-einem-edelgas/1686",
       "schwurbel_der_woche": "Mi270 - „Rattenhass“",
-      "minkorrekt_url": "",
+      "minkorrekt_url": "https://minkorrekt.de/mi270-rattenhass/",
       "abstract": "Homöopathen tun wirklich alles in Zuckerkügelchen."
     }
   ],
   "Li": [
     {
       "title": "Die Lithiumquarze der Seelenschwestern",
-      "url": "",
+      "url": "https://www.soulsistersdesigns.com/de/lithiumquartz",
       "schwurbel_der_woche": "Mi272 - „Löffelgradient“",
-      "minkorrekt_url": "",
+      "minkorrekt_url": "https://minkorrekt.de/mi272-loeffelgradient/",
       "abstract": "Die Seelenschwestern geben nicht nur auf ihrer Website und durch ihren Namen ein schönes Gefïhl, sondern auch durch die metaphysisch heilenden Eigenschaften von Lithiumquarz."
+    }
+  ],
+  "Be": [
+    {
+      "title": "Beryll (OZ4)",
+      "url": "https://www.wege.org/aquamarin-edelstein-des-vorfruehlings.html",
+      "schwurbel_der_woche": "Mi273 – „moderne Steinheilkunde“",
+      "minkorrekt_url": "https://minkorrekt.de/mi273-moderne-steinheilkunde/",
+      "abstract": "Beryllium. Enthalten im Edelstein des Vorfrühlings: Aquamarin!"
+    }
+  ],
+  "B": [
+    {
+      "title": "Bor (OZ5)",
+      "url": "http://www.geschichteinchronologie.com/med/merk/merkblatt-heilwirkung-borax-Dt.html",
+      "schwurbel_der_woche": "Mi274 – „Zwangsinformiert“",
+      "minkorrekt_url": "https://minkorrekt.de/mi274-zwangsinformiert/",
+      "abstract": "Ein Merkblatt zur Heilwirkung von Bor und Borax, aka Borax-Heilwasser!"
     }
   ]
 }
