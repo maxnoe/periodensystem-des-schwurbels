@@ -1,6 +1,5 @@
 <script>
 export let element = undefined;
-export let disabled = true;
 export let items = [];
 
 let category = "empty-tile";
@@ -31,14 +30,6 @@ if (element !== undefined) {
 
     main {
         font-size: 16pt;
-    }
-
-    a.empty {
-        background-color: rgba(0, 0, 0, 0);
-    }
-
-    #counter {
-        font-size: 8pt;
     }
 
     .tile {
