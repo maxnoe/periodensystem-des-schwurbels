@@ -1,6 +1,6 @@
 on:
   - push
-  - pull_requst
+  - pull_request
 
 
 jobs:
